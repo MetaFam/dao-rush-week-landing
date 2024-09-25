@@ -17,7 +17,7 @@ export default function App() {
           </h3>
         <div className="flex justify-center space-x-4">
           <button data-tally-open="3lWxpo" data-tally-layout="modal" data-tally-align-left="1" data-tally-overlay="1" data-tally-emoji-text="💞" data-tally-emoji-animation="heart-beat" data-tally-auto-close="1000" className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md">Rep a DAO</button>
-          <button className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md" href="https://github.com/luma-team/examples">Join a DAO</button>
+          <button className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md">Join a DAO</button>
         </div>
       </div>
     </main>
