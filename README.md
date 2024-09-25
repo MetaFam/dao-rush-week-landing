@@ -1,9 +1,11 @@
-This is a simple landing page for DAO Rush Week 2024.
+#This is a simple landing page for DAO Rush Week 2024.
 
 Includes a pop-up Tally form for sign-up.
 
-Vite-React-Typescript
-Tailwind-Daisy
+- Vite-React-Typescript
+- Tailwind-Daisy
+
+--- 
 
 Can add [Appkit](https://github.com/reown-com/appkit) for wallet connection and EAS for attestations, if needed.
 
