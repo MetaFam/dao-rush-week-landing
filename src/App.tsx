@@ -88,7 +88,7 @@ export default function App() {
             data-tally-emoji-text="💞"
             data-tally-emoji-animation="heart-beat"
             data-tally-auto-close="1000"
-            className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md"
+            className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md border-accent"
           >
             Rep a DAO
           </button>
@@ -100,7 +100,7 @@ export default function App() {
             data-tally-emoji-text="💞"
             data-tally-emoji-animation="heart-beat"
             data-tally-auto-close="1000"
-            className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md">
+            className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md border-accent">
             Join a DAO
           </button>
         </div>
