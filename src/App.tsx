@@ -1,19 +1,22 @@
 import { useState } from'react';
 
-interface AccordionState {
-  [key: number]: boolean;
-}
-
 export default function App() {
-  const [accordionState, setAccordionState] = useState<AccordionState>({
+  const [accordionState, setAccordionState] = useState({
     1: false,
     2: false,
     3: false,
-  });
+  } as { [key: string]: boolean });
 
-  const handleAccordionClick = (id: number) => {
+  const handleAccordionClick = (id: string) => {
     setAccordionState((prevState) => {
-      return {...prevState, [id]:!prevState[id] };
+      return Object.keys(prevState).reduce((acc, key) => {
+        if (key === id) {
+          acc[key] =!prevState[key];
+        } else {
+          acc[key] = false;
+        }
+        return acc;
+      }, {} as { [key: string]: boolean });
     });
   };
 
@@ -33,12 +36,12 @@ export default function App() {
             <div className="collapse-title text-md font-medium">
               <h1
                 className="text-lg sm:text-md font-bold mt-2 mb-2 text-center text-accent"
-                onClick={() => handleAccordionClick(1)}
+                onClick={() => handleAccordionClick('1')}
               >
                 Onboard contributors or join a DAO!
               </h1>
             </div>
-            <div className="collapse-content" onClick={() => handleAccordionClick(1)}>
+            <div className="collapse-content" onClick={() => handleAccordionClick('1')}>
               <h2 className="text-md sm:text-md font-bold mt-2 mb-2 text-center text-white">
                 A DAO is a Decentralized Autonomous Organization.
               </h2>
@@ -52,12 +55,12 @@ export default function App() {
             <div className="collapse-title text-md font-medium">
               <h2
                 className="text-lg text-accent font-bold mb-2 text-center"
-                onClick={() => handleAccordionClick(2)}
+                onClick={() => handleAccordionClick('2')}
               >
                 Come show or learn the way.
               </h2>
             </div>
-            <div className="collapse-content" onClick={() => handleAccordionClick(2)}>
+            <div className="collapse-content" onClick={() => handleAccordionClick('2')}>
               <h2 className="text-md text-white font-bold mb-2 text-center">
                 Are you the veteran or the greenhorn?
               </h2>
@@ -71,12 +74,12 @@ export default function App() {
             <div className="collapse-title text-md font-medium">
               <h3
                 className="text-md text-accent font-bold mb-2 text-center"
-                onClick={() => handleAccordionClick(3)}
+                onClick={() => handleAccordionClick('3')}
               >
                 So! What do you wanna do?
               </h3>
             </div>
-            <div className="collapse-content mb-3" onClick={() => handleAccordionClick(3)}>
+            <div className="collapse-content mb-3" onClick={() => handleAccordionClick('3')}>
               <h3 className="text-md text-white font-bold mb-4 text-center">
                 Choose your own adventure
               </h3>
