@@ -95,7 +95,7 @@ export default function App() {
               data-tally-emoji-text="💞"
               data-tally-emoji-animation="heart-beat"
               data-tally-auto-close="1000"
-              className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md border-accent"
+              className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md border-accent mb-2"
             >
               Rep a DAO
             </button>
@@ -107,14 +107,14 @@ export default function App() {
               data-tally-emoji-text="💞"
               data-tally-emoji-animation="heart-beat"
               data-tally-auto-close="1000"
-              className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md border-accent"
+              className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md border-accent mb-2"
             >
               Join a DAO
             </button>
           </div>
         </div>
       </main>
-      <footer className="footer footer-center mx-auto max-w-md bg-base-100 text-base-content pt-0">
+      <footer className="footer footer-center mx-auto max-w-md bg-base-100 text-base-content pt-16 mt-14">
         <nav className="grid grid-flow-col gap-4">
           <a href="https://lu.ma/daospring" className="link link-hover hover:text-accent">
             Luma
