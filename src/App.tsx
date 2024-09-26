@@ -92,7 +92,15 @@ export default function App() {
           >
             Rep a DAO
           </button>
-          <button className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md">
+          <button 
+            data-tally-open="wodJN1"
+            data-tally-layout="modal"
+            data-tally-align-left="1"
+            data-tally-overlay="1"
+            data-tally-emoji-text="💞"
+            data-tally-emoji-animation="heart-beat"
+            data-tally-auto-close="1000"
+            className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:btn-md">
             Join a DAO
           </button>
         </div>
