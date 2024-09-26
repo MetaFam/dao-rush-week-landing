@@ -1,13 +1,17 @@
 import { useState } from'react';
 
+interface AccordionState {
+  [key: number]: boolean;
+}
+
 export default function App() {
-  const [accordionState, setAccordionState] = useState({
+  const [accordionState, setAccordionState] = useState<AccordionState>({
     1: false,
     2: false,
     3: false,
   });
 
-  const handleAccordionClick = (id) => {
+  const handleAccordionClick = (id: number) => {
     setAccordionState((prevState) => {
       return {...prevState, [id]:!prevState[id] };
     });
