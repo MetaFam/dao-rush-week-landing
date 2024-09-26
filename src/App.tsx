@@ -127,8 +127,8 @@ export default function App() {
           </a>
         </nav>
         <nav>
-          <div className="grid grid-flow-col gap-4">
-            <a href="https://x.com/daocember" className="fill-current hover:fill-accent">
+          <div className="flex items-center gap-4">
+            <a href="https://x.com/daocember" className="fill-current hover:fill-accent flex justify-center mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="32"
@@ -136,6 +136,16 @@ export default function App() {
                 viewBox="0 0 32 32"
               >
                 <path d="M18.234 14.162L26.977 4h-2.072l-7.591 8.824L11.25 4H4.258l9.169 13.343L4.258 28H6.33l8.016-9.318L20.75 28h6.993zm-2.837 3.299l-.93-1.329L7.078 5.56h3.182l5.964 8.532l.93 1.329l7.753 11.09h-3.182z" />
+              </svg>
+            </a>
+            <a href="https://daocember.substack.com/" className="fill-current hover:fill-accent flex justify-center">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="32"
+                viewBox="0 0 32 32"
+              >
+                <path d="M22.539 8.242H1.46V5.406h21.08zM1.46 10.812V24L12 18.11L22.54 24V10.812zM22.54 0H1.46v2.836h21.08z" />
               </svg>
             </a>
           </div>
