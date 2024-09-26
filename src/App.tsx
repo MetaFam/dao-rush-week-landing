@@ -1,4 +1,18 @@
+import { useState } from'react';
+
 export default function App() {
+  const [accordionState, setAccordionState] = useState({
+    1: false,
+    2: false,
+    3: false,
+  });
+
+  const handleAccordionClick = (id) => {
+    setAccordionState((prevState) => {
+      return {...prevState, [id]:!prevState[id] };
+    });
+  };
+
   return (
     <main className="h-screen flex justify-center items-center mx-auto max-w-md pt-2 pr-8 pl-8 m-2">
       <div className="flex flex-col items-center place-items-center">
@@ -7,10 +21,16 @@ export default function App() {
           <img src="./assets/rushweek.webp" alt="rushweek" className="w-full h-full" />
         </div>
         <div className="join join-vertical w-full mx-auto">
-          <div className="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="accordion" />
-            <div className="collapse-title collapse-close text-md font-medium">
-              <h1 className="text-lg sm:text-md font-bold mt-2 mb-2 text-center text-accent">
+          <div
+            className={`collapse collapse-arrow join-item border-base-300 border ${
+              accordionState[1]? 'collapse-open' : ''
+            }`}
+          >
+            <div className="collapse-title text-md font-medium">
+              <h1
+                className="text-lg sm:text-md font-bold mt-2 mb-2 text-center text-accent"
+                onClick={() => handleAccordionClick(1)}
+              >
                 Onboard contributors or join a DAO!
               </h1>
             </div>
@@ -20,10 +40,16 @@ export default function App() {
               </h2>
             </div>
           </div>
-          <div className="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="accordion" />
+          <div
+            className={`collapse collapse-arrow join-item border-base-300 border ${
+              accordionState[2]? 'collapse-open' : ''
+            }`}
+          >
             <div className="collapse-title text-md font-medium">
-              <h2 className="text-lg text-accent font-bold mb-2 text-center">
+              <h2
+                className="text-lg text-accent font-bold mb-2 text-center"
+                onClick={() => handleAccordionClick(2)}
+              >
                 Come show or learn the way.
               </h2>
             </div>
@@ -33,10 +59,16 @@ export default function App() {
               </h2>
             </div>
           </div>
-          <div className="collapse collapse-arrow join-item border-base-300 border">
-            <input type="radio" name="accordion" />
+          <div
+            className={`collapse collapse-arrow join-item border-base-300 border ${
+              accordionState[3]? 'collapse-open' : ''
+            }`}
+          >
             <div className="collapse-title text-md font-medium">
-              <h3 className="text-md text-accent font-bold mb-2 text-center">
+              <h3
+                className="text-md text-accent font-bold mb-2 text-center"
+                onClick={() => handleAccordionClick(3)}
+              >
                 So! What do you wanna do?
               </h3>
             </div>
