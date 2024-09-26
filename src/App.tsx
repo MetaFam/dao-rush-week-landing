@@ -3,8 +3,8 @@ export default function App() {
     <main className="h-screen flex justify-center items-center mx-auto max-w-md pt-4 p-8 m-4">
       <div className="flex flex-col items-center place-items-center">
         <div className="flex flex-col justify-center mb-2 mt-2">
-          <img src="/assets/dao.webp" alt="dao" className="size-full justify-center" />
-          <img src="/assets/rushweek.webp" alt="rushweek" className="w-full h-full " />
+          <img src="./assets/dao.webp" alt="dao" className="size-full justify-center" />
+          <img src="./assets/rushweek.webp" alt="rushweek" className="w-full h-full " />
         </div>
           <h1 className="text-lg sm:text-md font-bold mt-2 mb-2 text-center text-accent">
             Onboard contributors or join a DAO!
