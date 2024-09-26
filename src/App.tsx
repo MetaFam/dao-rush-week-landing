@@ -38,7 +38,7 @@ export default function App() {
                 Onboard contributors or join a DAO!
               </h1>
             </div>
-            <div className="collapse-content">
+            <div className="collapse-content" onClick={() => handleAccordionClick(1)}>
               <h2 className="text-md sm:text-md font-bold mt-2 mb-2 text-center text-white">
                 A DAO is a Decentralized Autonomous Organization.
               </h2>
@@ -57,7 +57,7 @@ export default function App() {
                 Come show or learn the way.
               </h2>
             </div>
-            <div className="collapse-content">
+            <div className="collapse-content" onClick={() => handleAccordionClick(2)}>
               <h2 className="text-md text-white font-bold mb-2 text-center">
                 Are you the veteran or the greenhorn?
               </h2>
@@ -76,7 +76,7 @@ export default function App() {
                 So! What do you wanna do?
               </h3>
             </div>
-            <div className="collapse-content mb-3">
+            <div className="collapse-content mb-3" onClick={() => handleAccordionClick(3)}>
               <h3 className="text-md text-white font-bold mb-4 text-center">
                 Choose your own adventure
               </h3>
