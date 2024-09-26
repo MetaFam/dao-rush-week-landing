@@ -27,6 +27,7 @@ export default function App() {
           <img src="./assets/dao.webp" alt="dao" className="size-full justify-center" />
           <img src="./assets/rushweek.webp" alt="rushweek" className="w-full h-full" />
         </div>
+        <h1 className="text-center text-2xl md:text-l font-extrabold text-white mb-2">Onboard contributors or join a DAO!</h1>
         <div className="join join-vertical w-full mx-auto">
           <div
             className={`collapse collapse-arrow join-item border-base-300 border ${
@@ -35,15 +36,18 @@ export default function App() {
           >
             <div className="collapse-title text-md font-medium">
               <h1
-                className="text-lg sm:text-md font-bold mt-2 mb-2 text-center text-accent"
+                className="text-md font-bold mt-2 mb-2 text-center px-2 text-accent"
                 onClick={() => handleAccordionClick('1')}
               >
-                Onboard contributors or join a DAO!
+                Showcase your DAO & <a className="text-secondary">onboard</a> contributors.
               </h1>
             </div>
             <div className="collapse-content" onClick={() => handleAccordionClick('1')}>
               <h2 className="text-md sm:text-md font-bold mt-2 mb-2 text-center text-white">
-                A DAO is a Decentralized Autonomous Organization.
+              <p className="text-secondary font-extrabold">Interested in onboarding more contributors?</p>
+
+              DAO Rush Week is the first event focused specifically on helping you do just that.
+              You will showcase your DAO, how it operates and what kind of contributors it needs. As a result, you will, hopefully, have a few new people join and start contributing to your DAO!
               </h2>
             </div>
           </div>
@@ -54,37 +58,26 @@ export default function App() {
           >
             <div className="collapse-title text-md font-medium">
               <h2
-                className="text-lg text-accent font-bold mb-2 text-center"
+                className="text-md text-accent font-bold mb-2 text-center"
                 onClick={() => handleAccordionClick('2')}
               >
-                Come show or learn the way.
+                Learn about DAOs & <a className="text-secondary">join</a> one or a few...
               </h2>
             </div>
             <div className="collapse-content" onClick={() => handleAccordionClick('2')}>
               <h2 className="text-md text-white font-bold mb-2 text-center">
-                Are you the veteran or the greenhorn?
+              <p className="text-secondary font-extrabold">Interested in the future of work?</p>
+
+              DAO Rush Week offers free alternative to paying for a college degree and still being unable to find work because employers look for experience!
+              Come get some hands-on work experience in how DAOs operate, sharpen your skills in whatever domain you want to contribute to, and add some work to your resume.
               </h2>
             </div>
           </div>
-          <div
-            className={`collapse collapse-arrow join-item border-base-300 border ${
-              accordionState[3]? 'collapse-open' : ''
-            }`}
-          >
-            <div className="collapse-title text-md font-medium">
-              <h3
-                className="text-md text-accent font-bold mb-2 text-center"
-                onClick={() => handleAccordionClick('3')}
-              >
-                So! What do you wanna do?
+          <div className="text-md font-medium">
+              <h3 className="text-md text-white italic font-bold mb-2 mt-4 text-center">
+                Choose your path forward.
               </h3>
             </div>
-            <div className="collapse-content mb-3" onClick={() => handleAccordionClick('3')}>
-              <h3 className="text-md text-white font-bold mb-4 text-center">
-                Choose your own adventure
-              </h3>
-            </div>
-          </div>
         </div>
         <div className="flex justify-center space-x-4 mt-2">
           <button
