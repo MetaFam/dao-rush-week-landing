@@ -1,32 +1,35 @@
-import { useState } from'react';
+import { useState } from'react'
 
 export default function App() {
   const [accordionState, setAccordionState] = useState({
     1: false,
     2: false,
     3: false,
-  } as { [key: string]: boolean });
+  } as { [key: string]: boolean })
 
   const handleAccordionClick = (id: string) => {
     setAccordionState((prevState) => {
-      return Object.keys(prevState).reduce((acc, key) => {
-        if (key === id) {
-          acc[key] =!prevState[key];
-        } else {
-          acc[key] = false;
-        }
-        return acc;
-      }, {} as { [key: string]: boolean });
-    });
-  };
+      return Object.keys(prevState).reduce(
+        (acc, key) => {
+          if (key === id) {
+            acc[key] = !prevState[key]
+          } else {
+            acc[key] = false
+          }
+          return acc
+        },
+        {} as { [key: string]: boolean }
+      )
+    })
+  }
 
   return (
     <>
       <main className="h-screen flex flex-grow justify-center items-center mx-auto max-w-md pt-2 pr-8 pl-8 m-2 mb-0 pb-0">
         <div className="flex flex-col items-center place-items-center">
           <div className="flex flex-col justify-center mb-2 mt-2">
-            <img src="./assets/dao.webp" alt="dao" className="size-full justify-center" />
-            <img src="./assets/rushweek.webp" alt="rushweek" className="w-full h-full" />
+            <img src="/assets/dao.webp" alt="dao" className="size-full justify-center" />
+            <img src="/assets/rushweek.webp" alt="rushweek" className="w-full h-full" />
           </div>
           <h1 className="text-center text-2xl md:text-l font-extrabold text-white mb-2">
             Onboard contributors or join a DAO!
