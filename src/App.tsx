@@ -95,7 +95,7 @@ export default function App() {
               data-tally-emoji-text="💞"
               data-tally-emoji-animation="heart-beat"
               data-tally-auto-close="1000"
-              className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md border-accent mb-2"
+              className="btn font-bold text-md text-white btn-secondary sm:btn-lg md:btn-md lg:bt-md border-accent mb-2 shadow-md"
             >
               Rep a DAO
             </button>
@@ -127,7 +127,7 @@ export default function App() {
           </a>
         </nav>
         <nav>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 pb-8">
             <a href="https://x.com/daocember" className="fill-current hover:fill-accent flex justify-center mb-2">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
