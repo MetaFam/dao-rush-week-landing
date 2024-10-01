@@ -45,7 +45,7 @@ export default function App() {
                   className="text-md font-bold mt-2 mb-2 text-center px-2 text-accent"
                   onClick={() => handleAccordionClick('1')}
                 >
-                  Showcase your DAO & <a className="text-secondary">onboard</a> contributors.
+                  Show your DAO & <a className="text-secondary">onboard</a> contributors.
                 </h1>
               </div>
               <div className="collapse-content" onClick={() => handleAccordionClick('1')}>
