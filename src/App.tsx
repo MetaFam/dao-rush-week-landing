@@ -34,6 +34,7 @@ export default function App() {
           <h1 className="text-center text-2xl md:text-l font-extrabold text-white mb-2">
             Onboard contributors or join a DAO!
           </h1>
+          <h2 className="italic text-center text-xl md:text-md font-bold text-white mb-2">14th - 18th October 2024</h2>
           <div className="join join-vertical w-full mx-auto">
             <div
               className={`collapse collapse-arrow join-item border-base-300 border ${
