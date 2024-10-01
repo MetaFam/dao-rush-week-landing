@@ -122,9 +122,6 @@ export default function App() {
           <a href="https://lu.ma/daospring" className="link link-hover hover:text-accent">
             Luma
           </a>
-          <a href="https://charmverse.io/" className="link link-hover hover:text-accent">
-            Charmverse
-          </a>
           <a href="https://giveth.io/project/daocember-the-ultimate-dao-playbook-2024" className="link link-hover hover:text-accent">
             Giveth
           </a>
